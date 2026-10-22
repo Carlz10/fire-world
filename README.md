@@ -50,14 +50,14 @@ A local HTML file can't create a Home Screen shortcut. To get one with offline s
 2. Open the published site in Safari and wait a few seconds while it caches.
 3. Use **Share → Add to Home Screen**.
 
-If you change the cached files, bump the `CACHE` name in `sw.js` (currently `fire-world-offline-v1`) so existing installs pick up the update.
+If you change the cached files, bump the `CACHE` name in `sw.js` (currently `fire-world-offline-v3`) so existing installs pick up the update.
 
 ## Project structure
 
 | File | Purpose |
 |------|---------|
 | `index.html` | The whole game: markup, styles and script |
-| `sw.js` | Service worker. Pre-caches `./` and `./index.html`, serves cache-first, and falls back to `index.html` when offline |
+| `sw.js` | Service worker. Pre-caches `./` and `./index.html`, serves network-first (cache is the offline fallback), and falls back to `index.html` when offline |
 | `README.txt` | Short original note on Home Screen / offline setup |
 
 ## Notes

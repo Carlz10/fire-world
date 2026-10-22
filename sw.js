@@ -1,4 +1,4 @@
-const CACHE = 'fire-world-offline-v3';
+const CACHE = 'fire-world-offline-v4';
 const ASSETS = ['./', './index.html'];
 self.addEventListener('install', event => {
   // cache:'reload' bypasses the browser HTTP cache so a new version never pre-caches a stale copy
